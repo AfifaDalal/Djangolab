@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+  <h2>Gallery</h2>
+  <div class="dropdown">
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+     {% load static %}        
+  <img src="{% static '/6.jpg' %}" class="img-rounded" alt="Cinque Terre" width="380" height="240">  
+      
+      <li><a href="/womens/">WOMEN'S</a></li>
+      {% load static %}        
+  <center><img src="{% static '/10.jpg' %}" class="img-rounded" alt="Cinque Terre" width="380" height="240"> 
+      <li><a href="/kids/">KID'S</a></li></center>
+      {% load static %}        
+  <img src="{% static '/men4.jpeg' %}" class="img-rounded" alt="Cinque Terre" width="380" height="240">
+      <li><a href="/mens/">MEN'S</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
